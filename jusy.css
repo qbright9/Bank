@@ -1,0 +1,28 @@
+.nav-link{
+    display: flex;
+list-style: none;
+}
+
+
+
+.dropdown1{
+    display: none;
+    width: 75%;
+    height: 5vh;
+    background-color: brown;
+}
+
+ .list1:hover .dropdown1{
+    display: flex;
+ }
+
+ .form-box{
+    display: flex;
+    margin-right: 150px;
+    height: 70vh;
+    width: 20em;
+    background-color: #f7f7f7;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }

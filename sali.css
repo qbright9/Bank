@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(243, 237, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header h3{
+    color: rgb(35, 25, 94);
+    margin-right: 20px;
+}
+.header p{
+    color: rgb(72, 99, 199);
+}
+.head{
+    width: 100%;
+    height: 6vh;
+    background-color: rgba(186, 196, 196, 0.128);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head p{
+    color: blueviolet;
+    margin-left: 30px;
+}
+.head ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+.head ul li a{
+    text-decoration: none;
+    color:  rgba(0, 0, 255, 0.507);  
+}
+.head a:hover{
+    color: red;
+}
+.item1{
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.item1 img{
+    width: 100px;
+    height: 20vh;
+    margin-left: 30px
+}
+.item1 ul{
+    display: flex;
+    margin-left: 160px;
+    list-style-type: none;
+    gap: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+.item1 ul li a{
+    text-decoration: none;
+    color: rgb(3, 3, 70);
+}
+.item1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+/* drop downl  */
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown button */
+.dropdown  a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 5px;
+}
+.dropdown > a:hover {
+    background-color: transparent;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    border-radius: 5px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+}
+
+.dropdown-content a:hover {
+    background-color: transparent;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.item2{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+}
+.box1{
+    background-color: transparent;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box1 p{
+    color: white;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: larger;
+    margin-top: 20px;
+}
+.box1 h2{
+    color: white;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 8vh;
+    
+}
+.box1 h3{
+    color: rgb(81, 64, 180);
+    font-size: 7vh;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.box1 h4{
+    color: white;
+    margin-left: 40px;
+    margin-top: 15px;
+    font-size: 3vh;
+}
+.box1 input{
+    width: 87%;
+    height: 8vh;
+    margin-left: 40px;
+    margin-top: 25px;
+    background-color: red;
+    color: azure;
+}
+.box1 input:hover{
+    background-color: white;
+    color: red;
+}
+.box2{
+    width: 25%;
+    height: 66vh;
+    background-color: whitesmoke;
+    margin-right: 50px;
+}
+@media  (max-width: 1057px){
+    .header{
+    width: 100%;
+    max-width: 506px ;
+    background-color: rgb(222, 125, 14);
+
+   }
+   .header h3{
+    color: brown;
+   }
+   .header p{
+    color: rgba(56, 195, 163, 0.616);
+   }    
+   .head{
+    width: 100%;
+    max-width: 506px;
+    background-color: rgba(30, 223, 223, 0.363);
+   }
+    .head p{
+    color: black;
+    }
+    .head ul li a{
+        color: black;
+    }
+
+    .item1{
+    width: 100%;
+    max-width: 506px;
+   }
+@media(min-width: 567px)
+}
