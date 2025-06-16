@@ -1,197 +1,219 @@
-*{
-    padding: 0;
-    margin: 0;
-}
-.header{
-    width: 100%;
-    height: 6vh;
-    background-color: rgb(243, 237, 230);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.header h3{
-    color: rgb(35, 25, 94);
-    margin-right: 20px;
-}
-.header p{
-    color: rgb(72, 99, 199);
-}
-.head{
-    width: 100%;
-    height: 6vh;
-    background-color: rgba(186, 196, 196, 0.128);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.head p{
-    color: blueviolet;
-    margin-left: 30px;
-}
-.head ul{
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    margin-right: 20px;
-}
-.head ul li a{
-    text-decoration: none;
-    color:  rgba(0, 0, 255, 0.507);  
-}
-.head a:hover{
-    color: red;
-}
-.header2{
-    width: 100%;
-    height: 15vh;
-    background-color: white;
-    display: flex;
-}
-.header2 img{
-    margin-left: 30px;
-    height: 13vh;
-    width: 20%;
-}
-.header2 ul{
-    text-decoration: none;
-    margin-left: 30px;
-    display: flex;
-}
-.nav{
-    gap: 10px;
-    list-style-type: none;
-    font-size: x-large;
-    font-weight: bold; 
-    margin-top: 30px;
-    width: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.dropdown12{
-    display: none;
-    background-color: brown;
-   height: 10vh;
-    width: 96%;
-    margin-left: 40px;
+/* HEADER TOP SECTION */
+.header {
+  width: 100%;
+  height: 6vh;
+  background-color: rgb(243, 237, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.dropdown13{
-    display: none;
-    background-color: blue;
-   height: 10vh;
-    width: 96%;
-    margin-left: 40px;
-  
-
-}
-.dropdown12 ul{
-    display: flex;
-    list-style: none;
+.header h3 {
+  color: rgb(35, 25, 94);
+  margin-right: 20px;
 }
 
-.dropdown13 ul{
-    display: flex;
-    list-style: none;
+.header p {
+  color: rgb(72, 99, 199);
 }
 
-
-.list1:hover .dropdown12{
-    display: flex;
-
+/* HEADER SECOND ROW */
+.head {
+  width: 100%;
+  height: 6vh;
+  background-color: rgba(186, 196, 196, 0.128);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.list2:hover .dropdown13{
-    display: flex;
-  
+.head p {
+  color: blueviolet;
+  margin-left: 30px;
 }
-.item2{
-    display: flex;
+
+.head ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.head ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.507);
+}
+
+.head a:hover {
+  color: red;
+}
+
+/* MAIN HEADER NAVIGATION */
+.header2 {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header2 img {
+  margin-left: 30px;
+  height: 13vh;
+  width: 20%;
+}
+
+.nav {
+  margin-left: 30px;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+/* DROPDOWNS STYLES */
+.list1,
+.list2 {
+  position: relative;
+}
+
+.dropdown12,
+.dropdown13 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: brown; /* .dropdown13 will override it later */
+  padding: 10px;
+  z-index: 100;
+  width: 200px;
+}
+
+.dropdown13 {
+  background-color: blue;
+}
+
+.dropdown12 ul,
+.dropdown13 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.dropdown12 ul li a,
+.dropdown13 ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+/* SHOW ON HOVER */
+.list1:hover .dropdown12 {
+  display: block;
+}
+
+.list2:hover .dropdown13 {
+  display: block;
+}
+
+/* SECTION: HERO */
+.item2 {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100vh;
   background-color: blue;
 }
-.box1{
-    background-color: transparent;
-    width: 50%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.box1 {
+  background-color: transparent;
+  width: 50%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.box1 p{
-    color: white;
-    margin-left: 40px;
-    margin-top: 15px;
-    font-size: larger;
-    margin-top: 20px;
+
+.box1 p,
+.box1 h2,
+.box1 h3,
+.box1 h4 {
+  margin-left: 40px;
+  color: white;
 }
-.box1 h2{
-    color: white;
-    margin-left: 40px;
-    margin-top: 15px;
-    font-size: 8vh;
-    
+
+.box1 h2 {
+  font-size: 8vh;
 }
-.box1 h3{
-    color: rgb(81, 64, 180);
-    font-size: 7vh;
-    margin-left: 40px;
-    margin-top: 10px;
+
+.box1 h3 {
+  color: rgb(81, 64, 180);
+  font-size: 7vh;
 }
-.box1 h4{
-    color: white;
-    margin-left: 40px;
-    margin-top: 15px;
-    font-size: 3vh;
+
+.box1 h4 {
+  font-size: 3vh;
 }
-.box1 input{
-    width: 87%;
-    height: 8vh;
-    margin-left: 40px;
-    margin-top: 25px;
-    background-color: red;
-    color: azure;
+
+.box1 input {
+  width: 87%;
+  height: 8vh;
+  margin-left: 40px;
+  margin-top: 25px;
+  background-color: red;
+  color: azure;
+  border: none;
 }
-.box1 input:hover{
-    background-color: white;
-    color: red;
+
+.box1 input:hover {
+  background-color: white;
+  color: red;
 }
-.box2{
-    width: 25%;
-    height: 66vh;
-    background-color: whitesmoke;
-    margin-right: 50px;
+
+.box2 {
+  width: 25%;
+  height: 66vh;
+  background-color: whitesmoke;
+  margin-right: 50px;
 }
-@media  (max-width: 1057px){
-    .header{
+
+/* RESPONSIVE */
+@media (max-width: 1057px) {
+  .header,
+  .head,
+  .item1 {
     width: 100%;
-    max-width: 506px ;
+    max-width: 506px;
+  }
+
+  .header {
     background-color: rgb(222, 125, 14);
+  }
 
-   }
-   .header h3{
+  .header h3 {
     color: brown;
-   }
-   .header p{
-    color: rgba(56, 195, 163, 0.616);
-   }    
-   .head{
-    width: 100%;
-    max-width: 506px;
-    background-color: rgba(30, 223, 223, 0.363);
-   }
-    .head p{
-    color: black;
-    }
-    .head ul li a{
-        color: black;
-    }
+  }
 
-    .item1{
-    width: 100%;
-    max-width: 506px;
-   }
+  .header p {
+    color: rgba(56, 195, 163, 0.616);
+  }
+
+  .head {
+    background-color: rgba(30, 223, 223, 0.363);
+  }
+
+  .head p,
+  .head ul li a {
+    color: black;
+  }
 }
