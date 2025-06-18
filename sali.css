@@ -83,7 +83,7 @@
 /* DROPDOWNS STYLES */
 .list1,
 .list2 {
-  position: relative;
+ 
 }
 
 /* UPDATED PERSONAL DROPDOWN */
@@ -91,7 +91,7 @@
   display: none;
   position: absolute;
   top: 100%;
-  left: 20%;
+  left: 200%;
   width: 78vw;
   background-color: brown;
   padding: 20px;
