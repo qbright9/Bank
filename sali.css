@@ -91,7 +91,7 @@
   display: none;
   position: absolute;
   top: 100%;
-  left: 200%;
+  left: 0;
   width: 78vw;
   background-color: brown;
   padding: 20px;
