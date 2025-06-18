@@ -83,7 +83,7 @@
 /* DROPDOWNS STYLES */
 .list1,
 .list2 {
- 
+ position: relative;
 }
 
 /* UPDATED PERSONAL DROPDOWN */
